@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "171409928952",
+    "project_id": "bibliotecaolas",
+    "storage_bucket": "bibliotecaolas.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:171409928952:android:08f4d4abc072427b1dc10d",
+        "android_client_info": {
+          "package_name": "com.sugardaddy.bibliotecaolas"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyApojK3eRwwNR4-jXsJ5jJOJtFe6iZCkvw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
