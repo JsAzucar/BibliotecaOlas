@@ -9,6 +9,7 @@ import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.auth.FirebaseAuth
 import com.sugardaddy.bibliotecaolas.R
+import com.sugardaddy.bibliotecaolas.ui.libros.MenuLibrosActivity
 import com.sugardaddy.bibliotecaolas.ui.main.MainActivity
 import com.sugardaddy.cafeteriaudb.data.repository.FirebaseRepository
 
@@ -124,7 +125,7 @@ class IniciarSesionActivity : AppCompatActivity() {
 
     private fun navegarSegunRol(rol: String) {
         Log.d(TAG, "Navegando según rol: $rol")
-        val intent = Intent(this, MainActivity::class.java)
+        val intent = Intent(this, MenuLibrosActivity::class.java)
         intent.putExtra("ROL_USUARIO", rol)
         startActivity(intent)
         finish()

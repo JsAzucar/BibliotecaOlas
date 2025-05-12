@@ -15,7 +15,6 @@ class SplashScreen : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_splash_screen)
 
-        // Move to MainActivity after 5 second
         Handler(Looper.getMainLooper()).postDelayed({
             startActivity(Intent(this, AuthenticationMenuActivity::class.java))
             finish()

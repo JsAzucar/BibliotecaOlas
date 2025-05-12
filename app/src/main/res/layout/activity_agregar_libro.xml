@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    android:background="@color/colorFondoPrincipal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/edtTitulo"
+            android:hint="Título"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/TextoNormal"/>
+
+        <EditText
+            android:id="@+id/edtDescripcion"
+            android:hint="Descripción"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/TextoNormal"
+            android:layout_marginTop="12dp"/>
+
+        <EditText
+            android:id="@+id/edtTipo"
+            android:hint="Tipo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/TextoNormal"
+            android:layout_marginTop="12dp"/>
+
+        <EditText
+            android:id="@+id/edtEnlace"
+            android:hint="Enlace"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/TextoNormal"
+            android:layout_marginTop="12dp"/>
+
+        <EditText
+            android:id="@+id/edtImagen"
+            android:hint="URL de imagen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/TextoNormal"
+            android:layout_marginTop="12dp"/>
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:visibility="gone"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btnGuardar"
+            android:text="Guardar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/BotonEstilo"
+            android:layout_marginTop="24dp"/>
+
+    </LinearLayout>
+</ScrollView>

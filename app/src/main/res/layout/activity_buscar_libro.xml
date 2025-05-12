@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorFondoPrincipal"
+    android:padding="24dp">
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical">
+
+    <!-- Entrada de ID -->
+    <EditText
+        android:id="@+id/edtIdLibro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="ID del libro"
+        style="@style/TextoNormal" />
+
+    <!-- Botón Buscar -->
+    <Button
+        android:id="@+id/btnBuscar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Buscar"
+        style="@style/BotonEstilo"
+        android:layout_marginTop="16dp" />
+
+    <!-- ProgressBar -->
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="24dp"
+        android:visibility="gone" />
+
+    <!-- Resultado estilizado -->
+    <LinearLayout
+        android:id="@+id/contenedorResultado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/libro_background"
+        android:padding="16dp"
+        android:layout_marginTop="24dp"
+        android:visibility="gone">
+
+      <!-- Título -->
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Título: "
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimario5"
+            android:fontFamily="@font/lato_bold"/>
+
+        <TextView
+            android:id="@+id/resTitulo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            style="@style/TextoNormal" />
+      </LinearLayout>
+
+      <!-- Descripción -->
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+          android:layout_marginTop="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Descripción: "
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimario5"
+            android:fontFamily="@font/lato_bold"/>
+
+        <TextView
+            android:id="@+id/resDescripcion"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            style="@style/TextoNormal" />
+      </LinearLayout>
+
+      <!-- Tipo -->
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+          android:layout_marginTop="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tipo: "
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimario5"
+            android:fontFamily="@font/lato_bold"/>
+
+        <TextView
+            android:id="@+id/resTipo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            style="@style/TextoNormal" />
+      </LinearLayout>
+
+      <!-- Enlace -->
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+          android:layout_marginTop="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enlace: "
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimario5"
+            android:fontFamily="@font/lato_bold"/>
+
+        <TextView
+            android:id="@+id/resEnlace"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:autoLink="web"
+            android:textColor="@color/colorExtra"
+            android:textStyle="italic"
+            android:fontFamily="@font/lato_italic"
+            android:textSize="14sp" />
+      </LinearLayout>
+
+      <!-- Imagen -->
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+          android:layout_marginTop="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Imagen: "
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimario5"
+            android:fontFamily="@font/lato_bold"/>
+
+        <TextView
+            android:id="@+id/resImagen"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:autoLink="web"
+            android:textColor="@color/colorExtra"
+            android:textStyle="italic"
+            android:fontFamily="@font/lato_italic"
+            android:textSize="14sp" />
+      </LinearLayout>
+    </LinearLayout>
+  </LinearLayout>
+</ScrollView>

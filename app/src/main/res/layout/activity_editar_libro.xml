@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorFondoPrincipal"
+    android:padding="24dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/edtIdLibro"
+            android:hint="ID del libro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/TextoNormal" />
+
+        <Button
+            android:id="@+id/btnBuscar"
+            android:text="Cargar datos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/BotonEstilo"
+            android:layout_marginTop="16dp" />
+
+        <EditText
+            android:id="@+id/edtTitulo"
+            android:hint="Título"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/TextoNormal"
+            android:layout_marginTop="16dp"/>
+
+        <EditText
+            android:id="@+id/edtDescripcion"
+            android:hint="Descripción"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/TextoNormal"
+            android:layout_marginTop="12dp"/>
+
+        <EditText
+            android:id="@+id/edtTipo"
+            android:hint="Tipo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/TextoNormal"
+            android:layout_marginTop="12dp"/>
+
+        <EditText
+            android:id="@+id/edtEnlace"
+            android:hint="Enlace"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/TextoNormal"
+            android:layout_marginTop="12dp"/>
+
+        <EditText
+            android:id="@+id/edtImagen"
+            android:hint="URL de imagen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/TextoNormal"
+            android:layout_marginTop="12dp"/>
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            android:layout_marginTop="16dp"/>
+
+        <Button
+            android:id="@+id/btnGuardar"
+            android:text="Guardar cambios"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/BotonEstilo"
+            android:layout_marginTop="24dp"/>
+
+        <Button
+            android:id="@+id/btnEliminar"
+            android:text="Eliminar libro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/BotonEstilo"
+            android:backgroundTint="@android:color/holo_red_dark"
+            android:layout_marginTop="12dp"/>
+    </LinearLayout>
+</ScrollView>
